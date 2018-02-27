@@ -1,0 +1,11 @@
+{
+  "name": "log-box-cli",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./index.js",
+  "keywords": [
+    "log"
+  ],
+  "author": "baolong",
+  "license": "ISC"
+}
