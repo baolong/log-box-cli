@@ -1,6 +1,9 @@
 # log-box-cli 日志收集服务客户端插件
+#### 基于Nodejs的日志收集服务客户端
+***
+服务端插件：[log-box-core](https://www.npmjs.com/package/log-box-core)
 
-### 安包：
+### 安装：
 
 ```javascript
 npm install log-box-cli;

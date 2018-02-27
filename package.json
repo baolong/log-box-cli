@@ -1,11 +1,16 @@
 {
   "name": "log-box-cli",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.0.3",
+  "description": "基于Nodejs的日志收集服务客户端",
   "main": "./index.js",
   "keywords": [
     "log"
   ],
   "author": "baolong",
-  "license": "ISC"
+  "homepage": "https://github.com/baolong/log-box-cli",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baolong/log-box-cli.git"
+  },
+  "license": "BSD"
 }
