@@ -1,6 +1,6 @@
 {
   "name": "log-box-cli",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "基于Nodejs的日志收集服务客户端",
   "main": "./index.js",
   "keywords": [
