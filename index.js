@@ -81,6 +81,8 @@ module.exports = class LBC {
 	log(level, str) {
 		let levelCode = null;
 		let msg = str;
+		let PRI = null;
+
 		if (str == undefined) {
 			levelCode = 100;
 			msg = level;
@@ -88,10 +90,13 @@ module.exports = class LBC {
 			levelCode = this.logLevels[level];
 
 			if (levelCode == undefined) {
-				throw new Error(`level "${ level }"" is not allowed`);
+				// 自定义日志级别
+				PRI = level;
+			} else {
+				// 默认的日志级别
+				PRI = 184+levelCode;
 			}
 		}
-		let PRI = 184+levelCode;
 		this.queue.push(`\<${ PRI }\>${ logFormat(msg) }`);
 		this.senMsg();
 	}
