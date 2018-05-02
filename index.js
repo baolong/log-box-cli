@@ -88,16 +88,11 @@ module.exports = class LBC {
 			msg = level;
 		} else {
 			levelCode = this.logLevels[level];
-
-			if (levelCode == undefined) {
-				// 自定义日志级别
-				PRI = level;
-			} else {
-				// 默认的日志级别
-				PRI = 184+levelCode;
-			}
+			PRI = levelCode == undefined ? level : 184+levelCode;
 		}
-		this.queue.push(`\<${ PRI }\>${ logFormat(msg) }`);
+		const msgFormat = logFormat(msg);
+		console.log(msgFormat);
+		this.queue.push(`\<${ PRI }\>${ msgFormat }`);
 		this.senMsg();
 	}
 
